@@ -37,7 +37,7 @@ while true; do
 	esac
 done
 
-sudo pacman -S waybar kitty dunst thunar qt5-wayland qt6-wayland hyprpaper chromium ttf-font-awesome
+sudo pacman -S waybar kitty dunst thunar qt5-wayland qt6-wayland hyprpaper chromium ttf-font-awesome gtk4 gtk3 gtk2
 
 while true; do
 	echo ""
