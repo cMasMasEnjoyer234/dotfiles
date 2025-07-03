@@ -8,7 +8,7 @@
 #
 # by Dakota Martin (2023)
 # modified from Stephan Raabe
-# ahora modificado por E.C (Emilio Cornejo)
+# ahora modificado por E.C (Emilio Cornejo) (2025) :V
 # -----------------------------------------------------
 
 # ------------------------------------------------------
