@@ -1,0 +1,55 @@
+"set number
+set laststatus=2
+"auto scaling de el texto"
+set wrap
+
+
+"set termguicolors
+"gestor de plugins"
+call plug#begin('~/.vim/plugged')
+" Aquí defines los plugins que quieras instalar.
+Plug 'junegunn/vim-plug'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+" Usar Tab para avanzar en el menú de autocompletado y Shift-Tab para retroceder
+" Cambiar el color de fondo del popup de autocompletado
+filetype plugin on
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm(): "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <c-@> coc#refresh()
+" Usar Tab para avanzar en el menú de autocompletado y Shift-Tab para retroceder
+inoremap <silent><expr> <TAB>     coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <silent><expr> <S-TAB>   coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+" Usar Enter para confirmar el autocompletado
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
+
+" Cambiar el color de fondo del popup de autocompletado
+highlight CocFloating ctermbg=234 guibg=#2E2E2E " Color de fondo
+highlight CocPumFiller ctermbg=234 guibg=#2E2E2E " Color del relleno de la lista de autocompletado
+highlight CocPumBorder ctermfg=15 guifg=#FFFFFF " Color del borde
+highlight CocPumMenu ctermbg=234 guibg=#2E2E2E " Color del menú
+highlight CocMenuSel ctermbg=239 guibg=#5f5f5f " Color del item seleccionado en el menú
+
+" Cambiar el color de fondo de los hints de inlay
+highlight CocInlayHint ctermbg=234 guibg=#1e132b
+
+" Cambiar el color de fondo de los hints de inlay para los parámetros
+highlight CocInlayHintParameter ctermbg=234 guibg=#1e132b
+
+" Cambiar el color de fondo de los hints de tipo
+highlight CocInlayHintType ctermbg=234 guibg=#1e132b
+
+
+
+let g:gruvbox_termcolors = 256  " Usar 256 colores en terminales compatibles
+
+set cursorline                 " Resaltar la línea del cursor
+"set relativenumber             " Mostrar números relativos
+syntax enable
