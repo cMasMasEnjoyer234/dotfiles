@@ -38,7 +38,7 @@ while true; do
 done
 
 sudo pacman -S fastfetch waybar kitty dunst thunar qt5-wayland qt6-wayland ttf-font-awesome gtk4 gtk3 gtk2 cava libreoffice rustup yay ttc-iosevka swww
-yay -S grimblast
+yay -S grimblast tofi
 while true; do
 	echo ""
 	read -p "QUIERES COPIAR LOS ARCHIVOS A: .config? PUEDES TAMBIEN HACERLO MANUALMENTE :V (Yy/Nn): " yn
