@@ -1,0 +1,1 @@
+Dotfiles, es mi config :v , aca lo tendre como un buen repertorio de mi arch, gracias a diosito bonito, alguien ya hizo un instalador bastante simple para que lo pueda modificar, (AUN NO E TESTEADO NADA, FABOR DE NO USAR EN SU MAQUINA PERSONAL [creditos a instalador](https://github.com/dakota-m/hyprland-setup/blob/main/1-install.sh))
